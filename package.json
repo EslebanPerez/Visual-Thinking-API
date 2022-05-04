@@ -1,0 +1,19 @@
+{
+  "name": "visual-thinking-api",
+  "version": "1.0.0",
+  "description": "Code challenge para la misión Backend en LaunchX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EslebanPerez/Visual-Thinking-API.git"
+  },
+  "author": "EslebanPerez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EslebanPerez/Visual-Thinking-API/issues"
+  },
+  "homepage": "https://github.com/EslebanPerez/Visual-Thinking-API#readme"
+}
