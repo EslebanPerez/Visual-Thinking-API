@@ -108,4 +108,44 @@ describe("Test para Student Services",() => {
         const getStudentsCertificated = studentServices.studentHaveCertification(studentproff);
         expect(getStudentsCertificated).toContain("Todd@visualpartnership.xyz");
     });
+    test("Test 6: Obtener a estudiantes con creditos mayor a 500", () =>{
+        const studentproff = [
+            {
+                "id": "6264d5d89f1df827eb84bb23",
+                "name": "Warren",
+                "email": "Todd@visualpartnership.xyz",
+                "credits": 508,
+                "enrollments": [
+                    "Visual Thinking Intermedio",
+                    "Visual Thinking Avanzado"
+                ],
+                "previousCourses": 1,
+                "haveCertification": true
+            }, 
+            {
+                "id": "6264d5d85cf81c496446b67f",
+                "name": "Lucinda",
+                "email": "Sexton@visualpartnership.xyz",
+                "credits": 677,
+                "enrollments": [
+                    "Visual Thinking Avanzado"
+                ],
+                "previousCourses": 6,
+                "haveCertification": false
+            },
+            {
+                "id": "6264d5d8cda17de0d2e9f236",
+                "name": "Fuentes",
+                "email": "Sharlene@visualpartnership.xyz",
+                "credits": 210,
+                "enrollments": [
+                    "Visual Thinking Avanzado"
+                ],
+                "previousCourses": 10,
+                "haveCertification": true
+            }
+        ];
+        const geStudentHighCredits = studentServices.studentCredits(studentproff, 500);
+        expect (geStudentHighCredits.length).toBe(2);
+    });
 });
