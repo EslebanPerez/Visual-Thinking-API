@@ -63,4 +63,21 @@ describe("Test para Student Services",() => {
         const getEmail = studentServices.getStudentEmail(studentproff);
         expect(getEmail).toBe("Todd@visualpartnership.xyz");
     });
+    test("Test 4: Prueba para obtener estudiantes con certificación", () => {
+        const studentproff = 
+            {
+                "id": "6264d5d89f1df827eb84bb23",
+                "name": "Warren",
+                "email": "Todd@visualpartnership.xyz",
+                "credits": 508,
+                "enrollments": [
+                    "Visual Thinking Intermedio",
+                    "Visual Thinking Avanzado"
+                ],
+                "previousCourses": 1,
+                "haveCertification": true
+            };
+        const getCetificationStatus = studentServices.getStudentCertification(studentproff);
+        expect(getCetificationStatus).toBe(true);
+    });
 });
