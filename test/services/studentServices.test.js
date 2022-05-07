@@ -44,14 +44,14 @@ describe("Test para Student Services",() => {
             }
         ];
         const getStudents = studentServices.getTotalStudents(studentproff);
-        expect(getStudents.length).toBe(3);
+        expect(getStudents.length).toBe(2);
     });
     test("Test 3: Prueba para obtener los email de estudiantes", () => {
         const studentproff = 
             {
                 "id": "6264d5d89f1df827eb84bb23",
                 "name": "Warren",
-                "email": "Todd@visualpartnership.xyz",
+                "email": "Todd@visualpartnoership.xyz",
                 "credits": 508,
                 "enrollments": [
                     "Visual Thinking Intermedio",
@@ -75,7 +75,7 @@ describe("Test para Student Services",() => {
                     "Visual Thinking Avanzado"
                 ],
                 "previousCourses": 1,
-                "haveCertification": true
+                "haveCertification": false
             };
         const getCetificationStatus = studentServices.getStudentCertification(studentproff);
         expect(getCetificationStatus).toBe(true);
@@ -85,7 +85,7 @@ describe("Test para Student Services",() => {
             {
                 "id": "6264d5d89f1df827eb84bb23",
                 "name": "Warren",
-                "email": "Todd@visualpartnership.xyz",
+                "email": "Todd@visualopartnership.xyz",
                 "credits": 508,
                 "enrollments": [
                     "Visual Thinking Intermedio",
@@ -114,7 +114,7 @@ describe("Test para Student Services",() => {
                 "id": "6264d5d89f1df827eb84bb23",
                 "name": "Warren",
                 "email": "Todd@visualpartnership.xyz",
-                "credits": 508,
+                "credits": 308,
                 "enrollments": [
                     "Visual Thinking Intermedio",
                     "Visual Thinking Avanzado"
