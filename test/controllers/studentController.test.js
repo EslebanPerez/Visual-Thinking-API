@@ -5,8 +5,12 @@ describe("Test Para Student Controller", () => {
         const students =  studentController.getAllStudents();
         expect(students.length).toBe(51);  
     });
-    test("test 2: Obtner el correo de estudiantes certificados",()=>{
+    test("Test 2: Obtener el correo de estudiantes certificados",()=>{
         const studentsCertificated = studentController.getEmailStudentsCertificated();
         expect(studentsCertificated).toContain("Todd@visualpartnership.xyz");
+    });
+    test ("Test 3: Obtener a los alumnos con creditos mayores a 500",()=>{
+        const studentHighCredits = studentController.getstudentHighCredits(500);
+        expect(studentHighCredits).toHaveLength(27);
     });
 });
