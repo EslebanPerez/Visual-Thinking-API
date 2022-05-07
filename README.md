@@ -47,7 +47,7 @@ Todos los pasos que se realizaron se encuentran en los commits del repositorio.
 ``` mermaid
 classDiagram
 class Reader {
-  readJsonFile()
+  + readJsonFile()
 
 }
 ```
@@ -60,9 +60,9 @@ class Reader {
 ``` mermaid
 classDiagram
 class studentController {
-  getAllStudents()
-  getEmailStudentsCertificated()
-  getstudentHighCredits(credits)
+  + getAllStudents()
+  + getEmailStudentsCertificated()
+  + getstudentHighCredits(credits)
 }
 ```
 
@@ -74,29 +74,30 @@ class studentController {
 ``` mermaid
 classDiagram
 class studentServices {
-  getTotalStudents(students)
-  static studentHaveCertification(students)
-  studentCredits(students, credits)
+  + getTotalStudents(students)
+  + static studentHaveCertification(students)
+  + studentCredits(students, credits)
 }
 ```
 
-## __Ejecutando las pruebas__ 🔍⚙
+## __Ejecutando las pruebas__ 🔍
 Para ejecutar las pruebas de este proyecto se debe ejecutar el siguiente comando:
 ```
 npm run test
 ```
 
-## __EndPoints__ 🔗
+## __EndPoints__ 📌
 Para acceder y ver los endpoints se se debe de ejecutar el comando `npm run service` para poder realizar la consulta al servidor y ver los resultados desde el navegador o desde Postman.
 
 |Método HTTP | Endpoint | Url | 
 |---| --- | --- |
-| [GET] | /api/students | `http://localhost:3001/api/students` |
-| [GET] | /api/students/emails | `http://localhost:3001/api/students/emails` |
-| [GET] | /api/students/:credits | `http://localhost:3001/api/students/500` |
+| [GET] | /v1/students | `http://localhost:3001/v1/students` |
+| [GET] | /v1/students/certification/emails | `http://localhost:3001/v/students/certification/emails` |
+| [GET] | /v1/students/credits/:credits | `http://localhost:3001/v1/students/credits/500` |
 
 
-##  __Pruebas en Postman__ 📌
+
+##  __Pruebas en Postman__ 👨‍🚀
 
 ![postmanTest](https://user-images.githubusercontent.com/99141560/167238978-dfb79429-cbb7-443f-9812-965bcf978b66.gif)
 
