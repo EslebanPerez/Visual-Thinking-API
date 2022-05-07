@@ -98,4 +98,6 @@ Para acceder y ver los endpoints se se debe de ejecutar el comando `npm run serv
 
 ##  __Pruebas en Postman__ 📌
 
+![postmanTest](https://user-images.githubusercontent.com/99141560/167238978-dfb79429-cbb7-443f-9812-965bcf978b66.gif)
+
 Autor: [@EslebanPerez](https://github.com/EslebanPerez) 
